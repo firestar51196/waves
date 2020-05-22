@@ -16,3 +16,4 @@ sudo ufw allow 80,443,587,465,143,993/tcp
 sudo apt install software-properties-common
 curl -o- https://raw.githubusercontent.com/vinyll/certbot-install/master/install.sh | bash
 sudo apt install python3-certbot-nginx
+
