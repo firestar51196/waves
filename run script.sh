@@ -1,0 +1,1 @@
+curl -o- https://raw.githubusercontent.com/firestar51196/waves/master/install-postfix.sh | sudo bash
