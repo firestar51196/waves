@@ -30,12 +30,12 @@ echo "server {
       		listen [::]:80;
       		server_name $1;
 
-      		\troot /var/www/$1/;
+      		root /var/www/$1/;
 
-      		\tlocation ~ /.well-known/acme-challenge {
-         		\t\tallow all;
-      		\t}
-	}\n" > /etc/nginx/conf.d/$1.conf
+      		location ~ /.well-known/acme-challenge {
+         		allow all;
+      		}
+	}" > /etc/nginx/conf.d/$1.conf
 
 sudo mkdir /var/www/$1
 sudo chown www-data:www-data /var/www/$1 -R
