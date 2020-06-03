@@ -40,7 +40,7 @@ echo "server {
 sudo mkdir /var/www/$1
 sudo chown www-data:www-data /var/www/$1 -R
 sudo systemctl reload nginx
-sudo certbot --nginx --agree-tos --redirect --hsts --staple-ocsp -register-unsafely-without-email -d $1
+sudo certbot --nginx --agree-tos --redirect --hsts --staple-ocsp --register-unsafely-without-email -d $1
 
 ## append submission to master.cf
 # echo "submission     inet     n    -    y    -    -    smtpd
